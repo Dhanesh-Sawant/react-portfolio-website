@@ -25,6 +25,7 @@ const Portfolio = () => {
 
     const getPortfolio = async () => {
         const querySnapshot = await getDocs(collection(db, 'portfolio'));
+        console.log('Fetched portfolio data:', getPortfolio()); // Debugging log
         setPortfolio(querySnapshot.docs.map((doc) => doc.data()));
     }
 
@@ -33,6 +34,7 @@ const Portfolio = () => {
             <div className="images-container">
                 {
                     portfolio.map((port, idx) => {
+                        console.log('Portfolio item:', port); // Debugging log
                         return (
                             <div className="image-box" key={idx}>
                                 <img 
@@ -41,7 +43,7 @@ const Portfolio = () => {
                                 alt="portfolio" />
                                 <div className="content">
                                     <p className="title">{port.name}</p>
-                                    <h4 className="description">{port.description}</h4>
+                                    <h4 className="description">{port.desc}</h4>
                                     <button
                                         className="btn"
                                         onClick={() => window.open(port.url)}

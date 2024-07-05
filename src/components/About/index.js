@@ -1,9 +1,15 @@
 import { useEffect, useState } from 'react'
 import {
+  faAndroid,
   faAngular,
+  faAws,
   faCss3,
+  faDocker,
+  faGit,
   faGitAlt,
+  faGooglePlay,
   faHtml5,
+  faJava,
   faJsSquare,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
@@ -32,41 +38,36 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          <p align="justify">
+          Welcome to my portfolio! I am Dhanesh Sawant, a passionate and skilled developer with a strong foundation in computer science and a specialization in business systems. I have a proven track record of delivering high-quality software solutions and contributing to open-source projects.
           </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+          <p align="justify">
+          During my tenure as a Flutter Developer at Pi Techniques Pvt Ltd, I led the development of a comprehensive application for employee time sheet management, significantly enhancing UI/UX and boosting accessibility. I also participated in Hacktoberfest 2023, where I contributed to the Audioplayer flutter package by resolving critical bugs, further honing my problem-solving skills.
           </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
+          <p align="justify">
+          I have undertaken several impactful projects, including Contests Reminder app, a Doctor Prescription Reader using TensorFlow and OpenCV and Hostel Connect integrating hostel services in an app. These projects showcase my proficiency in various programming languages and tools, such as Flutter & Dart as well as my ability to deliver practical and innovative solutions.
           </p>
         </div>
 
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faAndroid} color="#DD0031" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+              <FontAwesomeIcon icon={faGit} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              <FontAwesomeIcon icon={faDocker} color="#28A4D9" />
             </div>
             <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+              <FontAwesomeIcon icon={faJava} color="#5ED4F4" />
             </div>
             <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              <FontAwesomeIcon icon={faAws} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+              <FontAwesomeIcon icon={faGooglePlay} color="#EC4D28" />
             </div>
           </div>
         </div>
