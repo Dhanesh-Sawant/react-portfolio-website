@@ -6,7 +6,7 @@ import { collection } from 'firebase/firestore';
 
 // import {firebase} from 'firebase';
 
-import {  signOut } from "firebase/auth";
+import {signOut} from "firebase/auth";
 
 const Home = () => {
 
