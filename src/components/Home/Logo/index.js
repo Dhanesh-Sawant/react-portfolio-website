@@ -1,12 +1,10 @@
 import { useEffect, useRef } from 'react'
-// import gsap from 'gsap-trial'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import './index.scss'
 
 gsap.registerPlugin(useGSAP);
-import DrawSVGPlugin from 'gsap/DrawSVGPlugin' 
 
-import './index.scss'
 
 const Logo = () => {
   const bgRef = useRef()
@@ -14,7 +12,6 @@ const Logo = () => {
   const solidLogoRef = useRef()
 
   useEffect(() => {
-    gsap.registerPlugin(DrawSVGPlugin)
 
     gsap
       .timeline()
